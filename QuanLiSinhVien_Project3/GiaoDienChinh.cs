@@ -32,7 +32,7 @@ namespace QuanLiSinhVien_Project3
         {
             lb_thoigian.Text = string.Format("{0:HH:mm:ss tt}", DateTime.Now);
         }
-        #region Kiem Tra Tab
+        #region Kiem Tra Tab > Developer
         private String tentabmo;
         private bool Kiemtramotab(string name)
         {

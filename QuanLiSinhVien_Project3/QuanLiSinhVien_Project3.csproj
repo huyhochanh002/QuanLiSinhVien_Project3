@@ -102,8 +102,5 @@
   <ItemGroup>
     <None Include="Anh\exit22.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="TextFile1.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -151,6 +151,7 @@
     <None Include="Anh\remove_32px.png" />
     <None Include="Anh\maintenance_22px.png" />
     <None Include="Anh\maintenance_32px.png" />
+    <Content Include="DevComponents.DotNetBar2.dll" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

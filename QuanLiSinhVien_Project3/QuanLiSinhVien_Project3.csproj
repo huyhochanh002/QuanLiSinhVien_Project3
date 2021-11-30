@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>C:\Users\htv31\Downloads\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_QuanLyDiemSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QuanLyDiemSV.Designer.cs">
+      <DependentUpon>Frm_QuanLyDiemSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_QuanLySV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_QuanLySV.Designer.cs">
+      <DependentUpon>Frm_QuanLySV.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +85,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_QuanLyDiemSV.resx">
+      <DependentUpon>Frm_QuanLyDiemSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_QuanLySV.resx">
+      <DependentUpon>Frm_QuanLySV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaoDienChinh.resx">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,7 +118,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
     <None Include="Anh\anhmenuprj31.jpg" />
@@ -103,6 +145,12 @@
     <None Include="Anh\exit22.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\exit_32px.png" />
+    <None Include="Resources\no_32px.png" />
+    <None Include="Anh\add_32px.png" />
+    <None Include="Anh\remove_32px.png" />
+    <None Include="Anh\maintenance_22px.png" />
+    <None Include="Anh\maintenance_32px.png" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

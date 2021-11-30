@@ -31,6 +31,7 @@ namespace QuanLiSinhVien_Project3
         {
             this.components = new System.ComponentModel.Container();
             this.pn_left = new System.Windows.Forms.Panel();
+            this.pn_leftcon1 = new System.Windows.Forms.Panel();
             this.menu_left = new System.Windows.Forms.FlowLayoutPanel();
             this.btnQuanLySV = new System.Windows.Forms.Button();
             this.btnQuanLyDienSV = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@ namespace QuanLiSinhVien_Project3
             this.pn_top = new System.Windows.Forms.Panel();
             this.lb_thoigian = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.pn_leftcon1 = new System.Windows.Forms.Panel();
             this.pn_left.SuspendLayout();
             this.menu_left.SuspendLayout();
             this.pn_center.SuspendLayout();
@@ -65,6 +65,17 @@ namespace QuanLiSinhVien_Project3
             this.pn_left.Size = new System.Drawing.Size(400, 886);
             this.pn_left.TabIndex = 0;
             this.pn_left.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_left_Paint);
+            // 
+            // pn_leftcon1
+            // 
+            this.pn_leftcon1.BackgroundImage = global::QuanLiSinhVien_Project3.Properties.Resources.anhmenuprj31;
+            this.pn_leftcon1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_leftcon1.Enabled = false;
+            this.pn_leftcon1.Location = new System.Drawing.Point(0, 0);
+            this.pn_leftcon1.Margin = new System.Windows.Forms.Padding(0);
+            this.pn_leftcon1.Name = "pn_leftcon1";
+            this.pn_leftcon1.Size = new System.Drawing.Size(400, 309);
+            this.pn_leftcon1.TabIndex = 3;
             // 
             // menu_left
             // 
@@ -231,40 +242,32 @@ namespace QuanLiSinhVien_Project3
             // lb_thoigian
             // 
             this.lb_thoigian.BackColor = System.Drawing.Color.White;
+            this.lb_thoigian.Dock = System.Windows.Forms.DockStyle.Right;
             this.lb_thoigian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_thoigian.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_thoigian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lb_thoigian.Location = new System.Drawing.Point(960, 11);
+            this.lb_thoigian.ForeColor = System.Drawing.Color.Black;
+            this.lb_thoigian.Location = new System.Drawing.Point(969, 0);
             this.lb_thoigian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_thoigian.Name = "lb_thoigian";
-            this.lb_thoigian.Size = new System.Drawing.Size(193, 34);
+            this.lb_thoigian.Size = new System.Drawing.Size(193, 54);
             this.lb_thoigian.TabIndex = 1;
             this.lb_thoigian.Text = "Time";
             this.lb_thoigian.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_thoigian.Click += new System.EventHandler(this.lb_thoigian_Click);
             // 
             // btn_exit
             // 
             this.btn_exit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.btn_exit.Image = global::QuanLiSinhVien_Project3.Properties.Resources.exit22;
-            this.btn_exit.Location = new System.Drawing.Point(807, 2);
+            this.btn_exit.Location = new System.Drawing.Point(1162, 0);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(145, 54);
             this.btn_exit.TabIndex = 0;
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // pn_leftcon1
-            // 
-            this.pn_leftcon1.BackgroundImage = global::QuanLiSinhVien_Project3.Properties.Resources.anhmenuprj31;
-            this.pn_leftcon1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_leftcon1.Enabled = false;
-            this.pn_leftcon1.Location = new System.Drawing.Point(0, 0);
-            this.pn_leftcon1.Margin = new System.Windows.Forms.Padding(0);
-            this.pn_leftcon1.Name = "pn_leftcon1";
-            this.pn_leftcon1.Size = new System.Drawing.Size(400, 309);
-            this.pn_leftcon1.TabIndex = 3;
             // 
             // GiaoDienChinh
             // 

@@ -112,5 +112,10 @@ namespace QuanLiSinhVien_Project3
                 tabcontrol_center.SelectedTabIndex = tabcontrol_center.Tabs.Count - 1;
             }
         }
+
+        private void lb_thoigian_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

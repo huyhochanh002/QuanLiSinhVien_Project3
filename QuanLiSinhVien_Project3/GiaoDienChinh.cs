@@ -33,6 +33,7 @@ namespace QuanLiSinhVien_Project3
             lb_thoigian.Text = string.Format("{0:HH:mm:ss tt}", DateTime.Now);
         }
         #region Kiem Tra Tab
+        bool trangThai=false;
         private String tentabmo;
         private bool Kiemtramotab(string name)
         {
@@ -57,5 +58,64 @@ namespace QuanLiSinhVien_Project3
             }
         }
         #endregion
+
+        private void pn_left_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabcontrol_center_Click(object sender, EventArgs e)
+        {
+
+        }
+        public GiaoDienChinh frm;
+        public delegate void _dongTap();
+        private void btnQuanLySV_Click(object sender, EventArgs e)
+        {
+            this.trangThai = true;
+            this.tentabmo = "Quản lý Sinh Viên";
+            if (!Kiemtramotab(tentabmo))
+            {
+                TabItem t = tabcontrol_center.CreateTab(tentabmo);
+                t.Name = "Frm_QuanLySV";
+
+            Frm_QuanLySV frm_QuanLySV = new Frm_QuanLySV() { 
+                DongTap =new Frm_QuanLySV._dongTap(DongTab),
+                frm=this,
+                TopLevel=false,
+                Dock=DockStyle.Fill,
+            };
+                t.AttachedControl.Controls.Add(frm_QuanLySV);
+                frm_QuanLySV.Show();
+                tabcontrol_center.SelectedTabIndex = tabcontrol_center.Tabs.Count - 1;
+            }
+        }
+
+        private void btnQuanLyDienSV_Click(object sender, EventArgs e)
+        {
+            this.trangThai = true;
+            this.tentabmo = "Quản lý điểm Sinh Viên";
+            if (!Kiemtramotab(tentabmo))
+            {
+                TabItem t = tabcontrol_center.CreateTab(tentabmo);
+                t.Name = "Frm_QuanLyDiemSV";
+
+                Frm_QuanLyDiemSV frm_QuanDiemLySV = new Frm_QuanLyDiemSV()
+                {
+                    DongTap = new Frm_QuanLyDiemSV._dongTap(DongTab),
+                    frm = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill,
+                };
+                t.AttachedControl.Controls.Add(frm_QuanDiemLySV);
+                frm_QuanDiemLySV.Show();
+                tabcontrol_center.SelectedTabIndex = tabcontrol_center.Tabs.Count - 1;
+            }
+        }
+
+        private void lb_thoigian_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

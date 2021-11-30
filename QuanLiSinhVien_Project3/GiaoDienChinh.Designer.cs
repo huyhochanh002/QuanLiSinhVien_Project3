@@ -245,7 +245,6 @@ namespace QuanLiSinhVien_Project3
             // btn_exit
             // 
             this.btn_exit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.btn_exit.Image = global::QuanLiSinhVien_Project3.Properties.Resources.exit22;
             this.btn_exit.Location = new System.Drawing.Point(871, 0);
@@ -269,14 +268,12 @@ namespace QuanLiSinhVien_Project3
             // lb_thoigian
             // 
             this.lb_thoigian.BackColor = System.Drawing.Color.White;
-            this.lb_thoigian.Dock = System.Windows.Forms.DockStyle.Right;
             this.lb_thoigian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_thoigian.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_thoigian.ForeColor = System.Drawing.Color.Black;
-            this.lb_thoigian.Image = global::QuanLiSinhVien_Project3.Properties.Resources.panner_top_2;
-            this.lb_thoigian.Location = new System.Drawing.Point(726, 0);
+            this.lb_thoigian.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lb_thoigian.Location = new System.Drawing.Point(720, 9);
             this.lb_thoigian.Name = "lb_thoigian";
-            this.lb_thoigian.Size = new System.Drawing.Size(145, 44);
+            this.lb_thoigian.Size = new System.Drawing.Size(145, 28);
             this.lb_thoigian.TabIndex = 1;
             this.lb_thoigian.Text = "Time";
             this.lb_thoigian.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

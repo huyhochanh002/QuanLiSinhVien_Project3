@@ -50,6 +50,7 @@ namespace QuanLiSinhVien_Project3
             this.nmNotify = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -80,6 +81,8 @@ namespace QuanLiSinhVien_Project3
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.btnToday);
             this.panel3.Controls.Add(this.dtkpDate);
@@ -125,12 +128,13 @@ namespace QuanLiSinhVien_Project3
             // 
             // btnToday
             // 
-            this.btnToday.Location = new System.Drawing.Point(863, 2);
+            this.btnToday.BackColor = System.Drawing.Color.LightCyan;
+            this.btnToday.Location = new System.Drawing.Point(861, 0);
             this.btnToday.Name = "btnToday";
-            this.btnToday.Size = new System.Drawing.Size(89, 29);
+            this.btnToday.Size = new System.Drawing.Size(89, 36);
             this.btnToday.TabIndex = 1;
             this.btnToday.Text = "Today";
-            this.btnToday.UseVisualStyleBackColor = true;
+            this.btnToday.UseVisualStyleBackColor = false;
             // 
             // btnMonday
             // 
@@ -229,7 +233,7 @@ namespace QuanLiSinhVien_Project3
             // 
             this.panel6.Controls.Add(this.nmNotify);
             this.panel6.Controls.Add(this.ckbNotify);
-            this.panel6.Location = new System.Drawing.Point(-4, -1);
+            this.panel6.Location = new System.Drawing.Point(72, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(274, 36);
             this.panel6.TabIndex = 2;
@@ -238,7 +242,7 @@ namespace QuanLiSinhVien_Project3
             // 
             this.ckbNotify.AutoSize = true;
             this.ckbNotify.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbNotify.Location = new System.Drawing.Point(10, 5);
+            this.ckbNotify.Location = new System.Drawing.Point(12, 9);
             this.ckbNotify.Name = "ckbNotify";
             this.ckbNotify.Size = new System.Drawing.Size(68, 22);
             this.ckbNotify.TabIndex = 0;
@@ -259,7 +263,7 @@ namespace QuanLiSinhVien_Project3
             0,
             0});
             this.nmNotify.Name = "nmNotify";
-            this.nmNotify.Size = new System.Drawing.Size(123, 22);
+            this.nmNotify.Size = new System.Drawing.Size(126, 22);
             this.nmNotify.TabIndex = 1;
             this.nmNotify.Value = new decimal(new int[] {
             1,
@@ -290,12 +294,27 @@ namespace QuanLiSinhVien_Project3
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox1.BackColor = System.Drawing.Color.SkyBlue;
             this.textBox1.Location = new System.Drawing.Point(-12, 47);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(1192, 10);
             this.textBox1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::QuanLiSinhVien_Project3.Properties.Resources.no_32px;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(49, 36);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Frm_Calender
             // 
@@ -307,6 +326,7 @@ namespace QuanLiSinhVien_Project3
             this.Name = "Frm_Calender";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Calender";
+            this.Load += new System.EventHandler(this.Frm_Calender_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -343,5 +363,6 @@ namespace QuanLiSinhVien_Project3
         private System.Windows.Forms.Button btnThursday;
         private System.Windows.Forms.Button btnMonday;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

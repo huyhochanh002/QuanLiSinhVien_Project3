@@ -17,6 +17,10 @@ namespace QuanLiSinhVien_Project3
             InitializeComponent();
         }
 
+        public GiaoDienChinh frm;
+        public delegate void _dongTap();
+        public _dongTap DongTap;
+
         private void btnNext_Click(object sender, EventArgs e)
         {
 
@@ -35,6 +39,16 @@ namespace QuanLiSinhVien_Project3
         private void btnFriday_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Frm_Calender_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DongTap();
         }
     }
 }

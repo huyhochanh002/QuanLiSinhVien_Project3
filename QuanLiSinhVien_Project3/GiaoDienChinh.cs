@@ -25,7 +25,9 @@ namespace QuanLiSinhVien_Project3
 
         private void GiaoDienChinh_Load(object sender, EventArgs e)
         {
+            
             timedate.Start();
+            
         }
 
         private void timedate_Tick(object sender, EventArgs e)
@@ -116,6 +118,28 @@ namespace QuanLiSinhVien_Project3
         private void lb_thoigian_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLichhoc_Click(object sender, EventArgs e)
+        {
+            this.trangThai = true;
+            this.tentabmo = "Lịch học cho sinh viên";
+            if (!Kiemtramotab(tentabmo))
+            {
+                TabItem t = tabcontrol_center.CreateTab(tentabmo);
+                t.Name = "Frm_Calendar";
+
+                Frm_Calender frm_Calender=new Frm_Calender()
+                {
+                    //DongTap = new Frm_Calender._dongTap(DongTab),
+                    //frm = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill,
+                };
+                t.AttachedControl.Controls.Add(frm_Calender);
+                frm_Calender.Show();
+                tabcontrol_center.SelectedTabIndex = tabcontrol_center.Tabs.Count - 1;
+            }
         }
     }
 }

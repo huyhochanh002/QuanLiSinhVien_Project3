@@ -31,20 +31,20 @@ namespace QuanLiSinhVien_Project3
         {
             this.components = new System.ComponentModel.Container();
             this.pn_left = new System.Windows.Forms.Panel();
-            this.pn_leftcon1 = new System.Windows.Forms.Panel();
             this.menu_left = new System.Windows.Forms.FlowLayoutPanel();
             this.btnQuanLySV = new System.Windows.Forms.Button();
             this.btnQuanLyDienSV = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnLichhoc = new System.Windows.Forms.Button();
+            this.btnTimkiem = new System.Windows.Forms.Button();
+            this.btnKhaosat = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.pn_center = new System.Windows.Forms.Panel();
             this.tabcontrol_center = new DevComponents.DotNetBar.TabControl();
             this.timedate = new System.Windows.Forms.Timer(this.components);
             this.pn_top = new System.Windows.Forms.Panel();
             this.lb_thoigian = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.pn_leftcon1 = new System.Windows.Forms.Panel();
             this.pn_left.SuspendLayout();
             this.menu_left.SuspendLayout();
             this.pn_center.SuspendLayout();
@@ -66,25 +66,14 @@ namespace QuanLiSinhVien_Project3
             this.pn_left.TabIndex = 0;
             this.pn_left.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_left_Paint);
             // 
-            // pn_leftcon1
-            // 
-            this.pn_leftcon1.BackgroundImage = global::QuanLiSinhVien_Project3.Properties.Resources.anhmenuprj31;
-            this.pn_leftcon1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_leftcon1.Enabled = false;
-            this.pn_leftcon1.Location = new System.Drawing.Point(0, 0);
-            this.pn_leftcon1.Margin = new System.Windows.Forms.Padding(0);
-            this.pn_leftcon1.Name = "pn_leftcon1";
-            this.pn_leftcon1.Size = new System.Drawing.Size(400, 309);
-            this.pn_leftcon1.TabIndex = 3;
-            // 
             // menu_left
             // 
             this.menu_left.Controls.Add(this.btnQuanLySV);
             this.menu_left.Controls.Add(this.btnQuanLyDienSV);
-            this.menu_left.Controls.Add(this.button3);
-            this.menu_left.Controls.Add(this.button4);
-            this.menu_left.Controls.Add(this.button5);
-            this.menu_left.Controls.Add(this.button6);
+            this.menu_left.Controls.Add(this.btnLichhoc);
+            this.menu_left.Controls.Add(this.btnTimkiem);
+            this.menu_left.Controls.Add(this.btnKhaosat);
+            this.menu_left.Controls.Add(this.btnHelp);
             this.menu_left.Location = new System.Drawing.Point(0, 313);
             this.menu_left.Margin = new System.Windows.Forms.Padding(0);
             this.menu_left.Name = "menu_left";
@@ -127,73 +116,74 @@ namespace QuanLiSinhVien_Project3
             this.btnQuanLyDienSV.UseVisualStyleBackColor = false;
             this.btnQuanLyDienSV.Click += new System.EventHandler(this.btnQuanLyDienSV_Click);
             // 
-            // button3
+            // btnLichhoc
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 128);
-            this.button3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(400, 62);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLichhoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLichhoc.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnLichhoc.FlatAppearance.BorderSize = 0;
+            this.btnLichhoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLichhoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichhoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichhoc.Location = new System.Drawing.Point(0, 128);
+            this.btnLichhoc.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnLichhoc.Name = "btnLichhoc";
+            this.btnLichhoc.Size = new System.Drawing.Size(400, 62);
+            this.btnLichhoc.TabIndex = 2;
+            this.btnLichhoc.Text = "Lịch học cho sinh viên";
+            this.btnLichhoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLichhoc.UseVisualStyleBackColor = false;
+            this.btnLichhoc.Click += new System.EventHandler(this.btnLichhoc_Click);
             // 
-            // button4
+            // btnTimkiem
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 192);
-            this.button4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(400, 62);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnTimkiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnTimkiem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnTimkiem.FlatAppearance.BorderSize = 0;
+            this.btnTimkiem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnTimkiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimkiem.Location = new System.Drawing.Point(0, 192);
+            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(400, 62);
+            this.btnTimkiem.TabIndex = 3;
+            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTimkiem.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnKhaosat
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(0, 256);
-            this.button5.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(400, 62);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnKhaosat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnKhaosat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnKhaosat.FlatAppearance.BorderSize = 0;
+            this.btnKhaosat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnKhaosat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhaosat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhaosat.Location = new System.Drawing.Point(0, 256);
+            this.btnKhaosat.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnKhaosat.Name = "btnKhaosat";
+            this.btnKhaosat.Size = new System.Drawing.Size(400, 62);
+            this.btnKhaosat.TabIndex = 4;
+            this.btnKhaosat.Text = "Khảo sát";
+            this.btnKhaosat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKhaosat.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnHelp
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 320);
-            this.button6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(400, 62);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnHelp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnHelp.FlatAppearance.BorderSize = 0;
+            this.btnHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.Location = new System.Drawing.Point(0, 320);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(400, 62);
+            this.btnHelp.TabIndex = 5;
+            this.btnHelp.Text = "Hỗ trợ";
+            this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHelp.UseVisualStyleBackColor = false;
             // 
             // pn_center
             // 
@@ -246,6 +236,7 @@ namespace QuanLiSinhVien_Project3
             this.lb_thoigian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_thoigian.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_thoigian.ForeColor = System.Drawing.Color.Black;
+            this.lb_thoigian.Image = global::QuanLiSinhVien_Project3.Properties.Resources.panner_top_2;
             this.lb_thoigian.Location = new System.Drawing.Point(969, 0);
             this.lb_thoigian.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_thoigian.Name = "lb_thoigian";
@@ -260,6 +251,7 @@ namespace QuanLiSinhVien_Project3
             this.btn_exit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_exit.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_exit.Image = global::QuanLiSinhVien_Project3.Properties.Resources.exit22;
             this.btn_exit.Location = new System.Drawing.Point(1162, 0);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(4);
@@ -268,6 +260,17 @@ namespace QuanLiSinhVien_Project3
             this.btn_exit.TabIndex = 0;
             this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // pn_leftcon1
+            // 
+            this.pn_leftcon1.BackgroundImage = global::QuanLiSinhVien_Project3.Properties.Resources.anhmenuprj31;
+            this.pn_leftcon1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pn_leftcon1.Enabled = false;
+            this.pn_leftcon1.Location = new System.Drawing.Point(0, 0);
+            this.pn_leftcon1.Margin = new System.Windows.Forms.Padding(0);
+            this.pn_leftcon1.Name = "pn_leftcon1";
+            this.pn_leftcon1.Size = new System.Drawing.Size(400, 309);
+            this.pn_leftcon1.TabIndex = 3;
             // 
             // GiaoDienChinh
             // 
@@ -302,10 +305,10 @@ namespace QuanLiSinhVien_Project3
         private System.Windows.Forms.Button btnQuanLySV;
         private System.Windows.Forms.Panel pn_leftcon1;
         private System.Windows.Forms.Button btnQuanLyDienSV;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnLichhoc;
+        private System.Windows.Forms.Button btnTimkiem;
+        private System.Windows.Forms.Button btnKhaosat;
+        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Panel pn_center;
         private DevComponents.DotNetBar.TabControl tabcontrol_center;
         private System.Windows.Forms.Label lb_thoigian;

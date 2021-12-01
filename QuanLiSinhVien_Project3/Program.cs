@@ -16,7 +16,7 @@ namespace QuanLiSinhVien_Project3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GiaoDienChinh());
+            Application.Run(new Frm_Login());
         }
     }
 }

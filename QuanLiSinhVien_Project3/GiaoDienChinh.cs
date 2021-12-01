@@ -131,8 +131,8 @@ namespace QuanLiSinhVien_Project3
 
                 Frm_Calender frm_Calender=new Frm_Calender()
                 {
-                    //DongTap = new Frm_Calender._dongTap(DongTab),
-                    //frm = this,
+                   DongTap = new Frm_Calender._dongTap(DongTab),
+                    frm = this,
                     TopLevel = false,
                     Dock = DockStyle.Fill,
                 };

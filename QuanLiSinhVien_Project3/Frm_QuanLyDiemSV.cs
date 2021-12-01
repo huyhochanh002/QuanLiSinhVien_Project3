@@ -34,5 +34,10 @@ namespace QuanLiSinhVien_Project3
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

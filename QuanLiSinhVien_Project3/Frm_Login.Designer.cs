@@ -86,6 +86,7 @@ namespace QuanLiSinhVien_Project3
             this.txtUserName.Size = new System.Drawing.Size(306, 27);
             this.txtUserName.TabIndex = 0;
             this.ToolTipUserName.SetToolTip(this.txtUserName, "Nhập UserName để đăng nhập!");
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
             // 
             // txtPassWord

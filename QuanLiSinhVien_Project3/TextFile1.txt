@@ -1,5 +1,6 @@
 ﻿Huy : Đã làm xong giao diện rồi nha 1
 Vand : lam login 
+Nghĩa : Frm đăng ki
 + 1 from -> nho71 doi ten btn o73 menu lai5 là sao
 sau khi lam xong bam61 qua git changes nhap mes comit all roi bam dau mui ten 
 truoc khi lam nho tao 1 nhanh moi 
@@ -10,3 +11,5 @@ co1 vay thui ha êco1 vay thui ha ê hieu hem ô cên giờ làm
 lam di nho la ko dc xoa bat cu cai gi du no la cmt
 lam don giang thoi nho theo mau chu dao cua form ô cê
 nhanh ft2 t tao roi do lam xong push len thoi ok pai pai 
+nhánh FT3 làm oke .
+alo alo.

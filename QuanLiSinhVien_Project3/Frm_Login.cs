@@ -86,5 +86,10 @@ namespace QuanLiSinhVien_Project3
             }
             dangnhap();
         }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -147,9 +147,10 @@ namespace QuanLiSinhVien_Project3
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(400, 62);
             this.btnTimkiem.TabIndex = 3;
-            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.Text = "Đăng Kí Học Phần";
             this.btnTimkiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTimkiem.UseVisualStyleBackColor = false;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // btnKhaosat
             // 
@@ -181,9 +182,10 @@ namespace QuanLiSinhVien_Project3
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(400, 62);
             this.btnHelp.TabIndex = 5;
-            this.btnHelp.Text = "Hỗ trợ";
+            this.btnHelp.Text = "Hỗ Trợ";
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // pn_center
             // 

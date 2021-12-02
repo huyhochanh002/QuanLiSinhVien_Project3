@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangKi.Designer.cs">
+      <DependentUpon>FrmDangKi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Calender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDangKi.resx">
+      <DependentUpon>FrmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Calender.resx">
       <DependentUpon>Frm_Calender.cs</DependentUpon>
     </EmbeddedResource>

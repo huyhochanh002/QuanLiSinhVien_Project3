@@ -141,5 +141,32 @@ namespace QuanLiSinhVien_Project3
                 tabcontrol_center.SelectedTabIndex = tabcontrol_center.Tabs.Count - 1;
             }
         }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            this.trangThai = true;
+            this.tentabmo = "Đăng Ký Học Phần";
+            if (!Kiemtramotab(tentabmo))
+            {
+                TabItem t = tabcontrol_center.CreateTab(tentabmo);
+                t.Name = "Frm_Calendar";
+
+                FrmDangKi frmDangKi = new FrmDangKi()
+                {
+                    DongTap = new FrmDangKi._dongTap(DongTab),
+                    frm = this,
+                    TopLevel = false,
+                    Dock = DockStyle.Fill,
+                };
+                t.AttachedControl.Controls.Add(frmDangKi);
+                frmDangKi.Show();
+                tabcontrol_center.SelectedTabIndex = tabcontrol_center.Tabs.Count - 1;
+            }
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

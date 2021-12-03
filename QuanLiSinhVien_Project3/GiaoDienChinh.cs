@@ -168,5 +168,10 @@ namespace QuanLiSinhVien_Project3
         {
             
         }
+
+        private void pn_leftcon1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

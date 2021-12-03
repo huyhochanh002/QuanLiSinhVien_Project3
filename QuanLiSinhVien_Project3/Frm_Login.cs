@@ -34,7 +34,9 @@ namespace QuanLiSinhVien_Project3
                 MessageBox.Show("Bạn chưa nhập PassWord!");
             else
                 if (this.txtUserName.Text == "admin" && this.txtPassWord.Text == "admin")
-                MessageBox.Show("Đăng nhập thành công!");
+            {
+                MessageBox.Show("Đăng nhập thành công!");              
+            }
             else
                 MessageBox.Show("User hoặc PassWord không đúng!");
 

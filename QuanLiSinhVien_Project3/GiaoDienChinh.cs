@@ -43,6 +43,7 @@ namespace QuanLiSinhVien_Project3
             {
                 if (tabcontrol_center.Tabs[i].Text == name)
                 {
+                    tabcontrol_center.SelectedTabIndex = i;
                     return true;
                 }
             }

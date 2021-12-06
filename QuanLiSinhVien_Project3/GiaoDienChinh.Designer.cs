@@ -282,7 +282,6 @@ namespace QuanLiSinhVien_Project3
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GiaoDienChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.Load += new System.EventHandler(this.GiaoDienChinh_Load);
             this.pn_left.ResumeLayout(false);
             this.menu_left.ResumeLayout(false);

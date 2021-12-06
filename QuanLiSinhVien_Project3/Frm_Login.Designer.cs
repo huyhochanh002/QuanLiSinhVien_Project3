@@ -83,7 +83,7 @@ namespace QuanLiSinhVien_Project3
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(306, 23);
-            this.txtUserName.TabIndex = 0;
+            this.txtUserName.TabIndex = 1;
             this.ToolTipUserName.SetToolTip(this.txtUserName, "Nhập UserName để đăng nhập!");
             this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
@@ -94,7 +94,7 @@ namespace QuanLiSinhVien_Project3
             this.txtPassWord.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassWord.Name = "txtPassWord";
             this.txtPassWord.Size = new System.Drawing.Size(306, 23);
-            this.txtPassWord.TabIndex = 1;
+            this.txtPassWord.TabIndex = 2;
             this.ToolTipPassWord.SetToolTip(this.txtPassWord, "Nhập PassWord để đăng nhập!");
             this.txtPassWord.Leave += new System.EventHandler(this.txtPassWord_Leave);
             // 
